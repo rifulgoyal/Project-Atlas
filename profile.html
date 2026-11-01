@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Riful Goyal | Profile Card</title>
+  <style>
+    :root {
+      --bg: #eef2f6;
+      --card: #ffffff;
+      --text: #1c2733;
+      --muted: #55636f;
+      --accent: #1f6f5c;
+      --accent-soft: #dcefe9;
+      --border: #d5dde4;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #12181e;
+        --card: #1b242c;
+        --text: #e8eef3;
+        --muted: #9aa8b4;
+        --accent: #6fcfb4;
+        --accent-soft: #23423a;
+        --border: #2d3a44;
+      }
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Segoe UI", system-ui, -apple-system, Arial, sans-serif;
+      line-height: 1.55;
+    }
+
+    .profile-card {
+      width: 100%;
+      max-width: 420px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 32px 28px;
+    }
+
+    .avatar {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      background: var(--accent-soft);
+      color: var(--accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.75rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 1.6rem;
+      line-height: 1.2;
+    }
+
+    .role {
+      margin: 4px 0 0;
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    h2 {
+      margin: 24px 0 8px;
+      font-size: 1rem;
+    }
+
+    p { margin: 0; color: var(--muted); }
+
+    .skills {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .skills li {
+      background: var(--accent-soft);
+      color: var(--accent);
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
+    .link {
+      display: inline-block;
+      margin-top: 24px;
+      padding: 10px 20px;
+      background: var(--accent);
+      color: var(--card);
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 8px;
+    }
+
+    .link:hover { opacity: 0.88; }
+    .link:focus-visible { outline: 3px solid var(--text); outline-offset: 3px; }
+  </style>
+</head>
+<body>
+  <main>
+    <article class="profile-card">
+      <header>
+        <div class="avatar" aria-hidden="true">R</div>
+        <h1>Riful Goyal</h1>
+        <p class="role">Computer Science Student and Aspiring Web Developer</p>
+      </header>
+
+      <section>
+        <h2>About me</h2>
+        <p>
+          I am a student learning to build for the web and manage code with
+          Git and GitHub. I enjoy turning small ideas into working projects,
+          like an image search site I built for class.
+        </p> 
+	<h3>Description</h3>
+	<p>
+	   It is made for an assignment called "PR Merge & Workflow" .<br> Html code written by Ai just doing my work.
+	</p>
+      </section>
+
+      <section>
+        <h2>Skills</h2>
+        <ul class="skills">
+          <li>Git &amp; GitHub</li>
+          <li>HTML &amp; CSS</li>
+          <li>JavaScript</li>
+        </ul>
+      </section>
+
+      <footer>
+        <a class="link" href="https://github.com/rifulgoyal" target="_blank" rel="noopener noreferrer">
+          View my GitHub
+        </a>
+      </footer>
+    </article>
+  </main>
+</body>
+</html>
